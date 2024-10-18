@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskFromActivityy">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="180dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_marginLeft="10dp"
+        app:cardBackgroundColor="#DEEBF7"
+        android:layout_centerInParent="true"
+
+        >
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Title"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Task Description"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Due Date (YYYY-MM-DD)"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+             />
+        <Spinner
+            android:id="@+id/spinnerPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:entries="@array/priority_array"
+            android:gravity="center|left"
+            android:layout_marginLeft="16sp"
+             />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:gravity="center"
+            android:text="Save Task"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:background="@drawable/border"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
